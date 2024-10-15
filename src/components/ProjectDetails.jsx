@@ -18,7 +18,7 @@ const ProjectDetails = () => {
                 {project.img.map((image, index) => (
                     <img 
                         key={index}
-                        src={`/src/assets/imgs/${image}`} 
+                        src={`/assets/imgs/${image}`} 
                         alt={`${project.title} image ${index + 1}`} // More descriptive alt text
                         className='sm:w-[800px] sm:h-[450px] w-[400px] h-[320px] p-4 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105'
                     />
