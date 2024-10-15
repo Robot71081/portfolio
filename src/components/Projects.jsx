@@ -22,7 +22,7 @@ const Projects = () => {
            <div className='bg-gray-800 bg-opacity-80 flex flex-col items-center p-6 rounded-lg shadow-lg'>
     <div className='flex items-center justify-center mb-4'>
         <img 
-            src={`/assets/imgs/btp.png`} 
+            src={`/assets/imgs/sandesh1.jpg`} 
             alt={project.title} 
             className='sm:w-[800px] sm:h-[450px] w-[200px] h-[320px] transition-transform duration-300 transform hover:scale-105' 
         />
