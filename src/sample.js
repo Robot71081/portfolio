@@ -2,8 +2,8 @@ const sample=[
     {
         "id": 1,
         "title": "Sandesh",
-        "img": [
-            "sandesh1.jpg",
+        "imgs": [
+            "sandesh1.JPG",
             "sandesh2.jpg",
             "sandesh3.jpg",
             "sandesh4.jpg",
@@ -20,8 +20,8 @@ const sample=[
     {
         "id": 2,
         "title": "Newsweb",
-        "img": [
-            "news1.jpg",
+        "imgs": [
+            "news1.JPG",
           
           ],
         "color": "green",
@@ -35,7 +35,7 @@ const sample=[
     {
         "id": 3,
         "title": "iNote",
-        "img": [
+        "imgs": [
             "note2.jpg",
             "note1.jpg"
           
@@ -51,7 +51,7 @@ const sample=[
     {
         "id": 4,
         "title": "Bookish",
-        "img": [
+        "imgs": [
             "book1.jpg",
             "book2.jpg",
             "book3.jpg",
@@ -70,7 +70,7 @@ const sample=[
     {
         "id": 5,
         "title": "Offline Library Management",
-        "img": [
+        "imgs": [
             "lib1.jpg",
             "lib2.jpg",
             "lib3.jpg",

@@ -15,10 +15,10 @@ const ProjectDetails = () => {
         </span>
         <div className='bg-gray-800 bg-opacity-80 flex flex-col items-center p-6 rounded-lg shadow-lg'>
             <div className='flex flex-col items-center justify-center mb-4'>
-                {project.img.map((image, index) => (
+                {project.imgs.map((image, index) => (
                     <img 
                         key={index}
-                        src={`/public/assets/imgs/${image}`} 
+                        src={`/assets/imgs/${image}`} 
                         alt={`${project.title} image ${index + 1}`} // More descriptive alt text
                         className='sm:w-[800px] sm:h-[450px] w-[200px] h-[320px] p-4 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105'
                     />
