@@ -20,7 +20,7 @@ const ProjectDetails = () => {
                         key={index}
                         src={`/assets/imgs/${image}`} 
                         alt={`${project.title} image ${index + 1}`} // More descriptive alt text
-                        className='sm:w-[800px] sm:h-[450px] w-[200px] h-[320px] p-4 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105'
+                        className='sm:w-[800px] sm:h-[450px] w-[400px] h-[320px] p-4 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105'
                     />
                 ))}
             </div>
