@@ -1,6 +1,8 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
 import { sample } from '../sample';
+import CarUsel from './CarUsel';
+
 
 const ProjectDetails = () => {
     const { id } = useParams();
@@ -14,16 +16,8 @@ const ProjectDetails = () => {
             <div className='absolute inset-x-0 bottom-0 h-1 bg-green-400 rounded-full transform translate-y-1/2' />
         </span>
         <div className='bg-gray-800 bg-opacity-80 flex flex-col items-center p-6 rounded-lg shadow-lg'>
-            <div className='flex flex-col items-center justify-center mb-4'>
-                {project.imgs.map((image, index) => (
-                    <img 
-                        key={index}
-                        src={`/assets/imgs/${image}`} 
-                        alt={`${project.title} image ${index + 1}`} // More descriptive alt text
-                        className='sm:w-[800px] sm:h-[450px] w-[400px] h-[320px] p-4 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105'
-                    />
-                ))}
-            </div>
+       <CarUsel project={project}/>
+
             <div className='text-center'>
                 <span className='text-white items-center justify-center cursor-pointer flex flex-row opacity-80 hover:opacity-100 transition-opacity duration-300'>
                { console.log(project.demo)}
