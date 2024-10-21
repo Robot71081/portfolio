@@ -53,7 +53,7 @@ const Header = () => {
                 </a>
             </span>
             <span className='text-white  cursor-pointer opacity-80 hover:l p-2 transition-colors duration-300'>
-                <a href="/assets/Resume/Rohit-Resume1.pdf" target="_blank" rel="noopener noreferrer" download className="text-gray-300 hover:text-gray-400">
+                <a href="/assets/Resume/Rohit-Resume.pdf" target="_blank" rel="noopener noreferrer" download className="text-gray-300 hover:text-gray-400">
                     <i className="fas fa-file-alt h-6 w-6"></i>
                 </a>
             </span>

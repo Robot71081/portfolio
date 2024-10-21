@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 const CarUsel = ({ project }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -13,30 +12,28 @@ const CarUsel = ({ project }) => {
     };
 
     return (
-        <div className='flex flex-col items-center justify-center mb-4'>
+        <div className='flex flex-col items-center justify-center mb-4 relative rounded-lg'>
             <img 
                 src={`/assets/imgs/${project.imgs[currentIndex]}`} 
                 alt={`${project.title} image ${currentIndex + 1}`} 
-                className='sm:w-[800px] sm:h-[450px] w-[250px] h-[320px] p-4 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105'
+                className='sm:w-[800px] sm:h-[450px] w-[250px] h-[320px] p-4 rounded-2xl shadow-md transition-transform duration-300 transform hover:scale-105'
             />
-            <div className='flex justify-between w-full mt-4'>
+            <div className='flex justify-between w-full mt-4 absolute top-1/2 transform -translate-y-1/2'>
                 <button 
                     onClick={prevImage} 
-                    className={`p-2 flex items-center bg-gray-300 rounded-md hover:bg-gray-400 transition duration-300 ${currentIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}`} 
+                    className={`p-2 flex items-center bg-gray-300 rounded-full hover:bg-gray-400 transition duration-300 ${currentIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}`} 
                     disabled={currentIndex === 0}
                     aria-label="Previous image"
                 >
-                    
-                    Previous
+                    <i className="fas fa-chevron-left"></i> {/* Left arrow icon */}
                 </button>
                 <button 
                     onClick={nextImage} 
-                    className={`p-2 flex items-center bg-gray-300 rounded-md hover:bg-gray-400 transition duration-300 ${currentIndex === project.imgs.length - 1 ? 'opacity-50 cursor-not-allowed' : ''}`} 
+                    className={`p-2 flex items-center bg-gray-300 rounded-full hover:bg-gray-400 transition duration-300 ${currentIndex === project.imgs.length - 1 ? 'opacity-50 cursor-not-allowed' : ''}`} 
                     disabled={currentIndex === project.imgs.length - 1}
                     aria-label="Next image"
                 >
-                    Next
-                   
+                    <i className="fas fa-chevron-right"></i> {/* Right arrow icon */}
                 </button>
             </div>
         </div>
