@@ -1,6 +1,6 @@
 import React from 'react';
-import { IoMdArrowRoundBack } from 'react-icons/io';
-import { useNavigate } from 'react-router-dom';
+
+
 import { IoLogoHtml5 } from "react-icons/io5";
 import { FaCss3Alt } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io5";
