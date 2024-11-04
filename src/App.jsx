@@ -13,8 +13,8 @@ function App() {
   return (
     <>
     <BrowserRouter>
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black">
-    <div className="absolute inset-0 bg-[url('/src/bg1.jpg')] opacity-20"></div>
+    <div className="bg-[#111827] min-h-screen">
+   
 
 
     <Header/>

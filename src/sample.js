@@ -18,7 +18,41 @@ const sample=[
         "github":"https://github.com/Robot71081/Sandesh-frontend.git"
     },
     {
-        "id": 2,
+      "id": 2,
+      "title": "Jem",
+      "imgs": [
+          "jem1.jpg",
+          "jem2.jpg",
+          "jem3.jpg",
+        
+        ],
+      "color": "green",
+      "preview": "A chatbot like gemini.",
+      "description":"Users can find different categories of news like general,bussiness,entertainment,sports etc",
+      "frontend":"HTML,CSS, React",
+      "backend":"Gemini api",
+      "demo":"https://jem-liart.vercel.app/",
+     
+      "github":"https://github.com/Robot71081/jem"
+  },
+  {
+    "id": 3,
+    "title": "iNote",
+    "imgs": [
+        "note2.jpg",
+        "note1.jpg"
+      
+      ],
+    "color": "red",
+    "preview": "A one stop location to store notes",
+    "description":"users can reigster,login and save their notes",
+    "frontend":"HTML, Bootstrap, React",
+    "backend":"Node.js, Express.js, JWT,MongoDb",
+    "demo":"https://i-note-frontend.vercel.app/",
+    "github":"https://github.com/Robot71081/iNote-frontend"
+},
+    {
+        "id": 4,
         "title": "Newsweb",
         "imgs": [
             "news1.JPG",
@@ -33,7 +67,7 @@ const sample=[
         "github":"https://github.com/Robot71081/newsweb.git"
     },
     {
-        "id": 3,
+        "id": 5,
         "title": "iNote",
         "imgs": [
             "note2.jpg",
@@ -49,7 +83,7 @@ const sample=[
         "github":"https://github.com/Robot71081/iNoteproject.git"
     },
     {
-        "id": 4,
+        "id": 6,
         "title": "Bookish",
         "imgs": [
             "book1.jpg",
@@ -68,7 +102,7 @@ const sample=[
         "github":"https://github.com/Robot71081/Myprojects.git"
     },
     {
-        "id": 5,
+        "id": 7,
         "title": "Offline Library Management",
         "imgs": [
             "lib1.jpg",

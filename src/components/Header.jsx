@@ -7,15 +7,23 @@ const Header = () => {
     <div className='flex flex-col py-8 '>
     <div className='flex flex-col md:flex-row justify-between items-center mx-4 md:mx-16'>
      <div className='mb-4 md:mb-0 p-4  text-center'>
-    <span className='text-white text-3xl font-bold'>Rohit Pawar</span>
+    <span className='text-white text-3xl font-bold'>Portfolio</span>
     <br />
-    <span className='text-gray-400 text-lg italic'>Web Developer</span>
+    
 </div>
 
        
         <nav className="shadow-lg backdrop-blur-3xl bg-opacity-50 py-4 rounded-full border border-gray-500/30 w-full md:w-auto mb-4 md:mb-0">
             <div className="container mx-auto flex justify-center">
                 <ul className="flex space-x-4 md:space-x-8 bg-opacity-50 rounded-full px-4">
+                <li>
+                        <Link 
+                            to="/about" 
+                            className={`rounded-full px-3 py-2 transition-colors duration-300 ${location.pathname === '/about' ? 'text-black bg-gray-300' : 'text-gray-300 hover:bg-gray-600'}`}
+                        >
+                            About
+                        </Link>
+                    </li>
                     <li>
                         <Link 
                             to="/" 
@@ -24,14 +32,7 @@ const Header = () => {
                             Projects
                         </Link>
                     </li>
-                    <li>
-                        <Link 
-                            to="/about" 
-                            className={`rounded-full px-3 py-2 transition-colors duration-300 ${location.pathname === '/about' ? 'text-black bg-gray-300' : 'text-gray-300 hover:bg-gray-600'}`}
-                        >
-                            About
-                        </Link>
-                    </li>
+                   
                 </ul>
             </div>
         </nav>

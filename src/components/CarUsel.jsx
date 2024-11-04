@@ -16,7 +16,7 @@ const CarUsel = ({ project }) => {
             <img 
                 src={`/assets/imgs/${project.imgs[currentIndex]}`} 
                 alt={`${project.title} image ${currentIndex + 1}`} 
-                className='sm:w-[800px] sm:h-[450px] w-[250px] h-[320px] p-4 rounded-lg shadow-md transition-transform duration-300 transform '
+                className='w-full h-auto max-w-[800px] max-h-[450px] p-4 rounded-lg shadow-md transition-transform duration-300 transform'
             />
             <div className='flex justify-between w-full mt-4 absolute top-1/2 transform -translate-y-1/2'>
                 <button 
@@ -25,7 +25,7 @@ const CarUsel = ({ project }) => {
                     disabled={currentIndex === 0}
                     aria-label="Previous image"
                 >
-                    <i className="fas fa-chevron-left"></i> {/* Left arrow icon */}
+                    <i className="fas fa-chevron-left"></i>
                 </button>
                 <button 
                     onClick={nextImage} 
@@ -33,7 +33,7 @@ const CarUsel = ({ project }) => {
                     disabled={currentIndex === project.imgs.length - 1}
                     aria-label="Next image"
                 >
-                    <i className="fas fa-chevron-right"></i> {/* Right arrow icon */}
+                    <i className="fas fa-chevron-right"></i>
                 </button>
             </div>
         </div>
