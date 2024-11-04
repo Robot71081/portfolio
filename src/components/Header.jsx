@@ -18,7 +18,7 @@ const Header = () => {
                 <ul className="flex space-x-4 md:space-x-8 bg-opacity-50 rounded-full px-4">
                 <li>
                         <Link 
-                            to="/about" 
+                            to="/" 
                             className={`rounded-full px-3 py-2 transition-colors duration-300 ${location.pathname === '/' ? 'text-black bg-gray-300' : 'text-gray-300 hover:bg-gray-600'}`}
                         >
                             About
@@ -26,7 +26,7 @@ const Header = () => {
                     </li>
                     <li>
                         <Link 
-                            to="/" 
+                            to="/projects" 
                             className={`rounded-full px-3 py-2 transition-colors duration-300 ${location.pathname === '/projects' ? 'text-black bg-gray-300' : 'text-gray-300 hover:bg-gray-600'}`}
                         >
                             Projects
