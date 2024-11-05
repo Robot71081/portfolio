@@ -38,11 +38,11 @@ const Projects = () => {
           </div>
           <div className='mt-4 text-center'>
             <h5 className='text-white font-bold mb-2 text-2xl'>Project Details</h5>
-            <div className='mb-2'>
+            <div className='mb-2 flex flex-col'>
               <span className='font-semibold text-lg'>Frontend: </span>
               <span className='text-gray-300 text-lg'>{project.frontend}</span>
             </div>
-            <div className='mb-2'>
+            <div className='mb-2 flex flex-col'>
               <span className='font-semibold text-lg'>Backend: </span>
               <span className='text-gray-300 text-lg'>{project.backend}</span>
             </div>

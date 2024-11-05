@@ -28,65 +28,98 @@ const About = () => {
     <h3 className="text-[50px] font-bold mb-2 text-center text-white" >Skills</h3>
     <h3 className="text-3xl font-bold mb-6 mt-8 text-center text-white">Frontend</h3>
     <div className="flex flex-col mt-4">
-        <div className="flex flex-wrap justify-center">
-            {[
-                { icon: <IoLogoHtml5 />, label: 'HTML' },
-                { icon: <FaCss3Alt />, label: 'CSS' },
-                { icon: <SiTailwindcss />, label: 'Tailwind' },
-                { icon: <IoLogoJavascript />, label: 'JS' },
-                { icon: <RiReactjsLine />, label: 'React' },
-                { icon: <TbBrandRedux />, label: 'Redux' },
-            ].map(skill => (
-                <span 
-                    key={skill.label} 
-                    className="flex items-center justify-center space-x-2 w-36 font-semibold bg-yellow-400 text-[#111827] text-2xl rounded-3xl p-3 m-2 shadow-lg hover:bg-yellow-300 transition duration-300"
-                >
-                    {skill.icon}
-                    <span>{skill.label}</span>
-                </span>
-            ))}
-        </div>
-        <h3 className="text-3xl font-bold mb-6 mt-8 text-center text-white">Backend</h3>
-        <div className="flex flex-wrap justify-center">
-                            {[
-                                { icon: <FaNodeJs />, label: 'Node.Js' },
-                                { icon: <span></span>, label: 'Express.js' },
-                                { icon: <SiJsonwebtokens />, label: 'JWT' },
-                                { icon: <SiSocketdotio />, label: 'Socket.io' },
-                                { icon: <span></span>, label: 'Mongoose' },
-                            ].map(skill => (
-                                <span key={skill.label} className='flex items-center justify-center space-x-2 w-40 font-semibold bg-yellow-400 text-[#111827] text-2xl rounded-3xl p-3 m-2 shadow-lg hover:bg-yellow-300 transition duration-300'>
-                                    {skill.icon}
-                                    <span>{skill.label}</span>
-                                </span>
-                            ))}
-                        </div>
-                        <h3 className="text-3xl font-bold mb-6 mt-8 text-center text-white">Database</h3>
+    <div className="flex justify-center">
+    <span 
+        className="flex flex-wrap items-center justify-center space-x-6 w-auto font-semibold bg-yellow-400 text-[#111827] text-2xl rounded-full p-3 m-2 shadow-lg hover:bg-yellow-300 transition duration-300"
+    >
+        {[
+            { icon: <IoLogoHtml5 />, label: 'HTML' },
+            { icon: <FaCss3Alt />, label: 'CSS' },
+            { icon: <SiTailwindcss />, label: 'Tailwind' },
+            { icon: <IoLogoJavascript />, label: 'JS' },
+            { icon: <RiReactjsLine />, label: 'React' },
+            { icon: <TbBrandRedux />, label: 'Redux' },
+        ].map(skill => (
+            <span 
+                key={skill.label} 
+                className="flex items-center space-x-2"
+            >
+                {skill.icon}
+                <span>{skill.label}</span>
+            </span>
+        ))}
+    </span>
+</div>
 
-                        <div className="flex flex-wrap justify-center">
-                            {[
-                                { icon: <SiMongodb />, label: 'MongoDB' },
-                                { icon: <SiMysql />, label: 'MySQL' },
-                            ].map(skill => (
-                                <span key={skill.label} className='flex items-center justify-center space-x-2 w-40 font-semibold bg-yellow-400 text-[#111827] text-2xl rounded-3xl p-3 m-2 shadow-lg hover:bg-yellow-300 transition duration-300'>
-                                    {skill.icon}
-                                    <span>{skill.label}</span>
-                                </span>
-                            ))}
-                        </div>
+
+        <h3 className="text-3xl font-bold mb-6 mt-8 text-center text-white">Backend</h3>
+        <div className="flex justify-center">
+    <span 
+        className="flex flex-wrap items-center justify-center space-x-6 w-auto font-semibold bg-yellow-400 text-[#111827] text-2xl rounded-full p-3 m-2 shadow-lg hover:bg-yellow-300 transition duration-300"
+    >
+        {[
+            { icon: <FaNodeJs />, label: 'Node.Js' },
+            { icon: <span></span>, label: 'Express.js' },
+            { icon: <SiJsonwebtokens />, label: 'JWT' },
+            { icon: <SiSocketdotio />, label: 'Socket.io' },
+            { icon: <span></span>, label: 'Mongoose' },
+        ].map(skill => (
+            <span 
+                key={skill.label} 
+                className="flex items-center space-x-2"
+            >
+                {skill.icon}
+                <span>{skill.label}</span>
+            </span>
+        ))}
+    </span>
+</div>
+    
+
+
+                        <h3 className="text-3xl font-bold mb-6 mt-8 text-center text-white">Database</h3>
+                        <div className="flex justify-center">
+    <span 
+        className="flex flex-wrap items-center justify-center space-x-6 w-auto font-semibold bg-yellow-400 text-[#111827] text-2xl rounded-full p-3 m-2 shadow-lg hover:bg-yellow-300 transition duration-300"
+    >
+        {[
+           { icon: <SiMongodb />, label: 'MongoDB' },
+           { icon: <SiMysql />, label: 'MySQL' },
+        ].map(skill => (
+            <span 
+                key={skill.label} 
+                className="flex items-center space-x-2"
+            >
+                {skill.icon}
+                <span>{skill.label}</span>
+            </span>
+        ))}
+    </span>
+</div>
+
+                     
                         <h3 className="text-3xl font-bold mb-6 mt-8 text-center text-white">Tools</h3>
 
-                        <div className="flex flex-wrap justify-center">
-                            {[
-                                { icon: <FaGithub />, label: 'GitHub' },
-                                { icon: <SiPostman />, label: 'Postman' },
-                            ].map(skill => (
-                                <span key={skill.label} className='flex items-center justify-center space-x-2 w-40 font-semibold bg-yellow-400 text-[#111827] text-2xl rounded-3xl p-3 m-2 shadow-lg hover:bg-yellow-300 transition duration-300'>
-                                    {skill.icon}
-                                    <span>{skill.label}</span>
-                                </span>
-                            ))}
-                        </div>
+                        <div className="flex justify-center">
+    <span 
+        className="flex flex-wrap items-center justify-center space-x-6 w-auto font-semibold bg-yellow-400 text-[#111827] text-2xl rounded-full p-3 m-2 shadow-lg hover:bg-yellow-300 transition duration-300"
+    >
+        {[
+            { icon: <FaGithub />, label: 'GitHub' },
+            { icon: <SiPostman />, label: 'Postman' },
+        ].map(skill => (
+            <span 
+                key={skill.label} 
+                className="flex items-center space-x-2"
+            >
+                {skill.icon}
+                <span>{skill.label}</span>
+            </span>
+        ))}
+    </span>
+</div>
+
+                     
 
                         
     </div>

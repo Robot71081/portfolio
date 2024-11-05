@@ -66,22 +66,7 @@ const sample=[
        
         "github":"https://github.com/Robot71081/newsweb.git"
     },
-    {
-        "id": 5,
-        "title": "iNote",
-        "imgs": [
-            "note2.jpg",
-            "note1.jpg"
-          
-          ],
-        "color": "red",
-        "preview": "A one stop location to store notes",
-        "description":"users can reigster,login and save their notes",
-        "frontend":"HTML, Bootstrap, React",
-        "backend":"Node.js, Express.js, JWT,MongoDb",
-        
-        "github":"https://github.com/Robot71081/iNoteproject.git"
-    },
+   
     {
         "id": 6,
         "title": "Bookish",

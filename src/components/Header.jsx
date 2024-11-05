@@ -19,7 +19,7 @@ const Header = () => {
                 <li>
                         <Link 
                             to="/" 
-                            className={`rounded-full px-3 py-2 transition-colors duration-300 ${location.pathname === '/' ? 'text-black bg-gray-300' : 'text-gray-300 hover:bg-gray-600'}`}
+                            className={`rounded-full px-3 py-2 transition-colors duration-300 ${location.pathname === '/' ? 'text-black bg-white' : 'text-white hover:bg-gray-600'}`}
                         >
                             About
                         </Link>
@@ -27,7 +27,7 @@ const Header = () => {
                     <li>
                         <Link 
                             to="/projects" 
-                            className={`rounded-full px-3 py-2 transition-colors duration-300 ${location.pathname === '/projects' ? 'text-black bg-gray-300' : 'text-gray-300 hover:bg-gray-600'}`}
+                            className={`rounded-full px-3 py-2 transition-colors duration-300 ${location.pathname === '/projects' ? 'text-black bg-white' : 'text-white hover:bg-gray-600'}`}
                         >
                             Projects
                         </Link>
