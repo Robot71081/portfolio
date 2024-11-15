@@ -29,26 +29,25 @@ const About = () => {
     <h3 className="text-3xl font-bold mb-6 mt-8 text-center text-white">Frontend</h3>
     <div className="flex flex-col mt-4">
     <div className="flex justify-center">
-    <span 
-        className="flex flex-wrap items-center justify-center space-x-6 w-auto font-semibold bg-yellow-400 text-[#111827] text-2xl rounded-full p-3 m-2 shadow-lg hover:bg-yellow-300 transition duration-300"
+    <span className="flex flex-wrap items-center justify-center space-x-4 w-auto font-semibold text-[#111827] text-2xl rounded-full p-3 m-2 shadow-lg backdrop-blur-lg bg-opacity-40">
+  {[ 
+    { icon: <IoLogoHtml5 />, label: 'HTML' },
+    { icon: <FaCss3Alt />, label: 'CSS' },
+    { icon: <SiTailwindcss />, label: 'Tailwind' },
+    { icon: <IoLogoJavascript />, label: 'JS' },
+    { icon: <RiReactjsLine />, label: 'React' },
+    { icon: <TbBrandRedux />, label: 'Redux' },
+  ].map((skill) => (
+    <span
+      key={skill.label}
+      className="flex items-center space-x-2 px-4 py-2 m-2 bg-yellow-400 text-[#111827] text-lg rounded-full shadow-lg backdrop-blur-sm hover:bg-yellow-300 transition duration-300"
     >
-        {[
-            { icon: <IoLogoHtml5 />, label: 'HTML' },
-            { icon: <FaCss3Alt />, label: 'CSS' },
-            { icon: <SiTailwindcss />, label: 'Tailwind' },
-            { icon: <IoLogoJavascript />, label: 'JS' },
-            { icon: <RiReactjsLine />, label: 'React' },
-            { icon: <TbBrandRedux />, label: 'Redux' },
-        ].map(skill => (
-            <span 
-                key={skill.label} 
-                className="flex items-center space-x-2"
-            >
-                {skill.icon}
-                <span>{skill.label}</span>
-            </span>
-        ))}
+      {skill.icon}
+      <span>{skill.label}</span>
     </span>
+  ))}
+</span>
+
 </div>
 
 

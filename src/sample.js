@@ -21,7 +21,7 @@ const sample=[
       "id": 2,
       "title": "FormCraft",
       "imgs": [
-          "fc1.JPG",
+          "fc1.jpg",
           "fc2.jpg",
           "fc3.jpg",
           "fc4.jpg",
