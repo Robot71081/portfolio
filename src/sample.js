@@ -19,6 +19,24 @@ const sample=[
     },
     {
       "id": 2,
+      "title": "FormCraft",
+      "imgs": [
+          "fc1.JPG",
+          "fc2.jpg",
+          "fc3.jpg",
+          "fc4.jpg",
+          
+        ],
+      "color": "yellow",
+      "preview": "A Chat web app for chatting with friends.",
+      "description":"Users can create an account to search for other users, send friend requests, and chat with them. Additionally, users can send attachments such as images, videos, audio files, and documents. They also have the option to create group chats.",
+      "frontend":"Html ,Tailwind,Shadcn/ui,Next",
+      "backend":"Drizzle ORM , Neon , Clerk",
+      "demo":"https://form-craft-ruby.vercel.app/",
+      "github":"https://github.com/Robot71081/FormCraft"
+  },
+    {
+      "id": 2,
       "title": "Jem",
       "imgs": [
           "jem1.jpg",
