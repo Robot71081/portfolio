@@ -53,69 +53,66 @@ const About = () => {
 
         <h3 className="text-3xl font-bold mb-6 mt-8 text-center text-white">Backend</h3>
         <div className="flex justify-center">
-    <span 
-        className="flex flex-wrap items-center justify-center space-x-6 w-auto font-semibold bg-yellow-400 text-[#111827] text-2xl rounded-full p-3 m-2 shadow-lg hover:bg-yellow-300 transition duration-300"
+        <span className="flex flex-wrap items-center justify-center space-x-4 w-auto font-semibold text-[#111827] text-2xl rounded-full p-3 m-2 backdrop-blur-lg bg-opacity-40">
+  {[ 
+    { icon: <FaNodeJs />, label: 'Node.Js' },
+    { icon: <span></span>, label: 'Express.js' }, // Add an appropriate icon if needed
+    { icon: <SiJsonwebtokens />, label: 'JWT' },
+    { icon: <SiSocketdotio />, label: 'Socket.io' },
+    { icon: <span></span>, label: 'Mongoose' },  // Add an appropriate icon if needed
+  ].map((skill) => (
+    <span
+      key={skill.label}
+      className="flex items-center space-x-2 px-4 py-2 m-2 bg-yellow-400 text-[#111827] text-lg rounded-full shadow-lg backdrop-blur-sm hover:bg-yellow-300 transition duration-300"
     >
-        {[
-            { icon: <FaNodeJs />, label: 'Node.Js' },
-            { icon: <span></span>, label: 'Express.js' },
-            { icon: <SiJsonwebtokens />, label: 'JWT' },
-            { icon: <SiSocketdotio />, label: 'Socket.io' },
-            { icon: <span></span>, label: 'Mongoose' },
-        ].map(skill => (
-            <span 
-                key={skill.label} 
-                className="flex items-center space-x-2"
-            >
-                {skill.icon}
-                <span>{skill.label}</span>
-            </span>
-        ))}
+      {skill.icon}
+      <span>{skill.label}</span>
     </span>
+  ))}
+</span>
+
 </div>
     
 
 
                         <h3 className="text-3xl font-bold mb-6 mt-8 text-center text-white">Database</h3>
                         <div className="flex justify-center">
-    <span 
-        className="flex flex-wrap items-center justify-center space-x-6 w-auto font-semibold bg-yellow-400 text-[#111827] text-2xl rounded-full p-3 m-2 shadow-lg hover:bg-yellow-300 transition duration-300"
+                        <span className="flex flex-wrap items-center justify-center space-x-4 w-auto font-semibold text-[#111827] text-2xl rounded-full p-3 m-2 backdrop-blur-lg bg-opacity-40">
+  {[ 
+    { icon: <SiMongodb />, label: 'MongoDB' },
+    { icon: <SiMysql />, label: 'MySQL' },
+  ].map((skill) => (
+    <span
+      key={skill.label}
+      className="flex items-center space-x-2 px-4 py-2 m-2 bg-yellow-400 text-[#111827] text-lg rounded-full shadow-lg backdrop-blur-sm hover:bg-yellow-300 transition duration-300"
     >
-        {[
-           { icon: <SiMongodb />, label: 'MongoDB' },
-           { icon: <SiMysql />, label: 'MySQL' },
-        ].map(skill => (
-            <span 
-                key={skill.label} 
-                className="flex items-center space-x-2"
-            >
-                {skill.icon}
-                <span>{skill.label}</span>
-            </span>
-        ))}
+      {skill.icon}
+      <span>{skill.label}</span>
     </span>
+  ))}
+</span>
+
 </div>
 
                      
                         <h3 className="text-3xl font-bold mb-6 mt-8 text-center text-white">Tools</h3>
 
                         <div className="flex justify-center">
-    <span 
-        className="flex flex-wrap items-center justify-center space-x-6 w-auto font-semibold bg-yellow-400 text-[#111827] text-2xl rounded-full p-3 m-2 shadow-lg hover:bg-yellow-300 transition duration-300"
+                        <span className="flex flex-wrap items-center justify-center space-x-4 w-auto font-semibold text-[#111827] text-2xl rounded-full p-3 m-2 backdrop-blur-lg bg-opacity-40">
+  {[ 
+    { icon: <FaGithub />, label: 'GitHub' },
+    { icon: <SiPostman />, label: 'Postman' },
+  ].map((skill) => (
+    <span
+      key={skill.label}
+      className="flex items-center space-x-2 px-4 py-2 m-2 bg-yellow-400 text-[#111827] text-lg rounded-full shadow-lg backdrop-blur-sm hover:bg-yellow-300 transition duration-300"
     >
-        {[
-            { icon: <FaGithub />, label: 'GitHub' },
-            { icon: <SiPostman />, label: 'Postman' },
-        ].map(skill => (
-            <span 
-                key={skill.label} 
-                className="flex items-center space-x-2"
-            >
-                {skill.icon}
-                <span>{skill.label}</span>
-            </span>
-        ))}
+      {skill.icon}
+      <span>{skill.label}</span>
     </span>
+  ))}
+</span>
+
 </div>
 
                      
