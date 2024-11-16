@@ -19,78 +19,77 @@ const About = () => {
 
   return (
     <>
-       <div class="text-center p-4 ">
+       <div class="text-center p-4  ">
         <h1 class="text-8xl py-2 text-teal-400  font-bold md:text-9xl font-acorn">Rohit Pawar</h1>
         <h3 class="text-3xl  py-2 text-white font-semibold ">Web Developer</h3>
         </div>
 
-        <div className="bg-[#1F2937] text-teal-400 rounded-3xl  shadow-md p-6 mb-4 mt-12">
+        <div className="bg-[#1F2937] text-teal-400 rounded-3xl  shadow-md p-6 mb-4 mt-12  ">
     <h3 className="text-[50px] font-bold mb-2 text-center text-white" >Skills</h3>
     <h3 className="text-3xl font-bold mb-6 mt-8 text-center text-white">Frontend</h3>
     <div className="flex flex-col mt-4">
     <div className="flex justify-center">
-    <span className="flex flex-wrap items-center justify-center space-x-4 w-auto font-semibold text-[#111827] text-2xl rounded-full p-3 m-2 shadow-lg backdrop-blur-lg bg-opacity-40">
-  {[ 
-    { icon: <IoLogoHtml5 />, label: 'HTML' },
-    { icon: <FaCss3Alt />, label: 'CSS' },
-    { icon: <SiTailwindcss />, label: 'Tailwind' },
-    { icon: <IoLogoJavascript />, label: 'JS' },
-    { icon: <RiReactjsLine />, label: 'React' },
-    { icon: <TbBrandRedux />, label: 'Redux' },
-  ].map((skill) => (
-    <span
-      key={skill.label}
-      className="flex items-center space-x-2 px-4 py-2 m-2 bg-yellow-400 text-[#111827] text-lg rounded-full shadow-lg backdrop-blur-sm hover:bg-yellow-300 transition duration-300"
-    >
-      {skill.icon}
-      <span>{skill.label}</span>
-    </span>
-  ))}
-</span>
-
+  <span className="flex items-center justify-center space-x-3 sm:space-x-4 md:space-x-6 px-5 py-2 m-2 bg-yellow-400 text-[#111827] text-sm sm:text-base md:text-lg lg:text-xl rounded-full shadow-lg backdrop-blur-sm hover:bg-yellow-300 transition duration-300">
+    {[  
+      { icon: <IoLogoHtml5 />, label: 'HTML' },
+      { icon: <FaCss3Alt />, label: 'CSS' },
+      { icon: <SiTailwindcss />, label: 'Tailwind' },
+      { icon: <IoLogoJavascript />, label: 'JS' },
+      { icon: <RiReactjsLine />, label: 'React' },
+      { icon: <TbBrandRedux />, label: 'Redux' },
+    ].map((skill) => (
+      <span key={skill.label} className="flex items-center space-x-2">
+        {skill.icon}
+        <span>{skill.label}</span>
+      </span>
+    ))}
+  </span>
 </div>
+
+
+
 
 
         <h3 className="text-3xl font-bold mb-6 mt-8 text-center text-white">Backend</h3>
         <div className="flex justify-center">
-        <span className="flex flex-wrap items-center justify-center space-x-4 w-auto font-semibold text-[#111827] text-2xl rounded-full p-3 m-2 backdrop-blur-lg bg-opacity-40">
-  {[ 
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+  {[
     { icon: <FaNodeJs />, label: 'Node.Js' },
-    { icon: <span></span>, label: 'Express.js' }, // Add an appropriate icon if needed
+    { icon: <span></span>, label: 'Express.js' }, // You can add an icon here if needed
     { icon: <SiJsonwebtokens />, label: 'JWT' },
     { icon: <SiSocketdotio />, label: 'Socket.io' },
-    { icon: <span></span>, label: 'Mongoose' },  // Add an appropriate icon if needed
+    { icon: <span></span>, label: 'Mongoose' }, // Add an appropriate icon if needed
   ].map((skill) => (
     <span
       key={skill.label}
-      className="flex items-center space-x-2 px-4 py-2 m-2 bg-yellow-400 text-[#111827] text-lg rounded-full shadow-lg backdrop-blur-sm hover:bg-yellow-300 transition duration-300"
+      className="flex items-center justify-center space-x-2 sm:space-x-3 md:space-x-4 px-3 py-2 m-2 bg-yellow-400 text-[#111827] text-sm sm:text-base md:text-lg lg:text-xl rounded-full shadow-lg backdrop-blur-sm hover:bg-yellow-300 transition duration-300"
     >
       {skill.icon}
       <span>{skill.label}</span>
     </span>
   ))}
-</span>
-
 </div>
+</div>
+
     
 
 
                         <h3 className="text-3xl font-bold mb-6 mt-8 text-center text-white">Database</h3>
                         <div className="flex justify-center">
-                        <span className="flex flex-wrap items-center justify-center space-x-4 w-auto font-semibold text-[#111827] text-2xl rounded-full p-3 m-2 backdrop-blur-lg bg-opacity-40">
+                      
   {[ 
     { icon: <SiMongodb />, label: 'MongoDB' },
     { icon: <SiMysql />, label: 'MySQL' },
   ].map((skill) => (
     <span
       key={skill.label}
-      className="flex items-center space-x-2 px-4 py-2 m-2 bg-yellow-400 text-[#111827] text-lg rounded-full shadow-lg backdrop-blur-sm hover:bg-yellow-300 transition duration-300"
+      className="flex items-center space-x-2 px-4 py-2 m-2 bg-yellow-400 text-[#111827] text-lg sm:text-base md:text-lg rounded-full shadow-lg backdrop-blur-sm hover:bg-yellow-300 transition duration-300"
     >
       {skill.icon}
       <span>{skill.label}</span>
     </span>
   ))}
-</span>
+
 
 </div>
 
@@ -98,20 +97,21 @@ const About = () => {
                         <h3 className="text-3xl font-bold mb-6 mt-8 text-center text-white">Tools</h3>
 
                         <div className="flex justify-center">
-                        <span className="flex flex-wrap items-center justify-center space-x-4 w-auto font-semibold text-[#111827] text-2xl rounded-full p-3 m-2 backdrop-blur-lg bg-opacity-40">
+                      
   {[ 
     { icon: <FaGithub />, label: 'GitHub' },
     { icon: <SiPostman />, label: 'Postman' },
   ].map((skill) => (
     <span
-      key={skill.label}
-      className="flex items-center space-x-2 px-4 py-2 m-2 bg-yellow-400 text-[#111827] text-lg rounded-full shadow-lg backdrop-blur-sm hover:bg-yellow-300 transition duration-300"
-    >
-      {skill.icon}
-      <span>{skill.label}</span>
-    </span>
+    key={skill.label}
+    className="flex items-center space-x-2 px-4 py-2 m-2 bg-yellow-400 text-[#111827] text-lg sm:text-base md:text-lg rounded-full shadow-lg backdrop-blur-sm hover:bg-yellow-300 transition duration-300"
+  >
+    {skill.icon}
+    <span>{skill.label}</span>
+  </span>
+  
   ))}
-</span>
+
 
 </div>
 
